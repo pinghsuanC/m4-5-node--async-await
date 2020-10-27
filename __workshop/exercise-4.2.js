@@ -9,6 +9,7 @@ const getTronaldDumpQuote = async () => {
       header: { "User-Agent": "Request-Promise" },
       json: true,
     });
+    // console.log(r);
     if (r) {
       return r.value;
     } else {

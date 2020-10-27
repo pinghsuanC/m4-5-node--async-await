@@ -21,6 +21,9 @@ express()
   .use(express.urlencoded({ extended: false }))
   .set("view engine", "ejs")
 
+  // add proxy
+  // start script
+
   // endpoints
   .get("/joke/:type", async (req, res) => {
     const j = await handleJoke(req.params["type"]);
